@@ -125,7 +125,8 @@ class DjangoRestFrameworkCompatMiddleware(MiddlewareMixin):
     non_cacheable_types = (
         'application/x-www-form-urlencoded',
         'multipart/form-data',
-        'application/octet-stream'
+        'application/octet-stream',
+        'text/xml'
     )
 
     def process_request(self, request):
